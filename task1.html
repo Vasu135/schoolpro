@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var main=document.createElement("div");
+        main.innerText="BR Architects";
+        main.style.height="50px";
+        main.style.width="100%";
+        main.style.background="azure";
+        main.style.position="fixed";
+        main.style.top="0";
+        main.style.zIndex="2"
+        main.style.display="flex";
+        main.style.justifyContent="space-between";
+        main.style.alignItems="center";
+        
+        var main2=document.createElement("div");
+        main2.style.width="300px";
+        main2.style.display="flex";
+        main2.style.justifyContent="space-around";
+        var ac=document.createElement("a");
+        ac.innerText="Projects";
+        var ac1=document.createElement("a");
+        ac1.innerText="About";
+        var ac2=document.createElement("a");
+        ac2.innerText="Contacts";
+        
+       
+        document.body.appendChild(main);
+        main.appendChild(main2);
+        main2.appendChild(ac);
+        main2.appendChild(ac1);
+        main2.appendChild(ac2);
+        var ig=document.createElement("div");
+        ig.style.position="relative";
+        var text=document.createElement("div");
+        text.innerHTML="Br Architects";
+        text.style.width="100px";
+        text.style.position="absolute";
+        text.style.top="40%";
+        text.style.left="50%";
+        text.style.padding="10px"
+         text.style.background="black";
+        text.style.color="white";
+        
+        
+        ig.style.background='url("https://www.w3schools.com/w3images/architect.jpg")';
+        ig.style.height="100vh";
+        ig.style.width="98vw";
+        ig.style.backgroundRepeat="no-repeat"
+        ig.style.backgroundSize="cover";
+        document.body.appendChild(ig);
+        ig.appendChild(text);
+         var d=document.createElement("h2");
+         d.innerText="Projects";
+         d.style.marginTop="50px";
+         document.body.appendChild(d);
+        
+        var a=document.createElement("div");
+        var img=["https://www.w3schools.com/w3images/house5.jpg","https://www.w3schools.com/w3images/house2.jpg","https://www.w3schools.com/w3images/house3.jpg","https://www.w3schools.com/w3images/house4.jpg","https://www.w3schools.com/w3images/house5.jpg","https://www.w3schools.com/w3images/house2.jpg","https://www.w3schools.com/w3images/house3.jpg","https://www.w3schools.com/w3images/house4.jpg"];
+        var content=["Summer House","Brick House","Renovated","Barn House","Summer House","Brick House","Renovated","Barn House"];
+        for(i=0;i<8;i++){
+        a.style.display="grid";
+        a.style.marginTop="50px";
+        a.style.gridTemplateColumns="auto auto auto auto"
+        a.style.gap="10px 10px"
+        var b=document.createElement("div");
+        b.style.background=`url(${img[i]})`;
+        b.style.height="300px";
+        b.style.weight="300px";
+        b.style.backgroundRepeat="no-repeat";
+        var c=document.createElement("div");
+        c.innerText=content[i];
+        c.style.background="black";
+        c.style.color="white";
+        c.style.width="100px"
+        c.style.padding="10px"
+        document.body.appendChild(a);
+         a.appendChild(b);
+         b.appendChild(c);
+        }
+        var e=document.createElement("h2");
+         e.innerText="About";
+         e.style.marginTop="50px";
+         document.body.appendChild(e);
+         var f=document.createElement("div");
+         f.innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+         document.body.appendChild(f);
+         
+   </script>
+</body>
+</html>
